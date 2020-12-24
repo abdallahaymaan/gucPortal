@@ -68,9 +68,9 @@ const userSchema = new mongoose.Schema({
         default:[]
     },
     dayOff: {
-        type:String,
-        enum:["saturday","sunday", "monday","tuesday","wednesday","thursday"],
-        default:"saturday"
+        type:Number,
+        enum:[0,1,2,3,4,5,6],
+        default:6
     },
     departmentID:String,
     annualLeaves:Number

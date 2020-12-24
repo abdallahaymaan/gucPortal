@@ -13,8 +13,8 @@ const slotSchema = new mongoose.Schema({
     location:String,
     // slotDate:Date,
     slotDay:{
-        type:String,
-        enum:["Saturday","Sunday", "Monday","Tuesday","Wednesday","Thursday"]
+        type:Number,
+        enum:[0,1,2,3,4,5,6]
     },
     SlotTime:{
         type:Number,
